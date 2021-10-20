@@ -6,9 +6,6 @@
 		"es2021": true
 	},
 	"parser": "@typescript-eslint/parser",
-	"parserOptions": {
-		"project": ["./tsconfig.json"]
-	},
 	"plugins": ["react-prefer-function-component"],
 	"extends": [
 		"eslint:all",
@@ -89,7 +86,6 @@
 			}
 		],
 
-		// React classes should not be used
 		"react/no-did-update-set-state": "off",
 		"react/no-find-dom-node": "off",
 		"react/no-is-mounted": "off",
