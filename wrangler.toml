@@ -1,0 +1,10 @@
+account_id = "56a2128fdbe136328ba632bf200e9712"
+name = "amazon-unlocker"
+type = "webpack"
+route = ''
+zone_id = ''
+usage_model = ''
+compatibility_flags = []
+workers_dev = true
+site = {bucket = "./dist",entry-point = "workers-site"}
+compatibility_date = "2021-10-20"
