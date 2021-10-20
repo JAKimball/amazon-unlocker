@@ -84,6 +84,6 @@
 	"lint-staged": {
 		"*": "prettier -uw",
 		"*.css": "stylelint --cache --fix",
-		"*.{ts,tsx}": "eslint --cache --fix"
+		"*.{js,ts,tsx}": "eslint --cache --fix"
 	}
 }
