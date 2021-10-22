@@ -71,7 +71,7 @@ export default function Fruit({ fruit, index }: Properties): ReactElement {
 				<ImageAttribution author={fruit.image.author} />
 			</div>
 			<h3 data-cy='FruitCardName' className='p-6 font-bold text-2xl'>
-				The {fruit.name}
+				The Awesome {fruit.name}
 			</h3>
 		</div>
 	)

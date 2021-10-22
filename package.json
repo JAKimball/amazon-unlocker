@@ -1,5 +1,5 @@
 {
-	"name": "my-vitamin-template",
+	"name": "amazon-unlocker",
 	"license": "MIT",
 	"private": true,
 	"version": "0.0.0",
@@ -9,15 +9,15 @@
 		"dev": "vite --open",
 		"prepare": "husky install",
 		"serve": "vite preview",
-		"serve:test": "start-server-and-test 'npm serve' http://localhost:5000",
-		"test": "npm serve:test 'cypress open'",
-		"test:headless": "npm serve:test 'cypress run'",
+		"serve:test": "start-server-and-test 'npm run serve' http://localhost:5000",
+		"test": "npm run serve:test 'cypress open'",
+		"test:headless": "npm run serve:test 'cypress run'",
 		"format": "prettier -uw --ignore-path .gitignore .",
 		"run-tsc": "tsc",
 		"run-eslint": "eslint --cache --fix --ignore-path .gitignore --ext .js,.ts,.tsx",
 		"run-stylelint": "stylelint --cache --fix --ignore-path .gitignore '**/*.css'",
 		"lint": "npm-run-all --parallel run-tsc run-stylelint run-eslint",
-		"validate": "npm lint && npm build --mode test && npm test:headless"
+		"validate": "npm lint && npm build --mode test && npm run test:headless"
 	},
 	"dependencies": {
 		"react": "17.0.2",
@@ -38,7 +38,7 @@
 		"autoprefixer": "10.3.7",
 		"cypress": "8.6.0",
 		"cz-conventional-changelog": "3.3.0",
-		"eslint": "8.0.1",
+		"eslint": "7.32.0",
 		"eslint-config-airbnb": "18.2.1",
 		"eslint-config-airbnb-base": "14.2.1",
 		"eslint-config-airbnb-typescript": "14.0.1",
