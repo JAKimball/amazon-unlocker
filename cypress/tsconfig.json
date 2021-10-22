@@ -12,5 +12,5 @@
 		"target": "ESNext",
 		"types": ["cypress"]
 	},
-	"include": ["."]
+	"include": ["**/*.ts"]
 }
