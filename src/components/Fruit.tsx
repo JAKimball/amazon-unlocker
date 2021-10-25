@@ -20,8 +20,8 @@ export default function Fruit({ fruit, index }: Properties): ReactElement {
 
 	const history = useHistory()
 	function onClick(): void {
-		window.scrollTo(0, 0)
 		history.push(fruit.name.toLowerCase())
+		window.scrollTo(0, 0)
 	}
 
 	function onKeyDown(event: KeyboardEvent<HTMLElement>): void {

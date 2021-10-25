@@ -6,7 +6,7 @@ import LoadingOrError from 'components/LoadingOrError'
 import type { ReactElement } from 'react'
 import { useQuery } from 'react-query'
 import type { RouteComponentProps } from 'react-router-dom'
-import { Link, Redirect } from 'react-router-dom'
+import { Link, Redirect, useHistory } from 'react-router-dom'
 import { useMediaQuery } from 'utils'
 
 const DESKTOP_IMAGE_WIDTH_PERCENTAGE = 0.4
@@ -16,6 +16,11 @@ export default function DetailsPage({
 	match
 }: RouteComponentProps<{ fruitName: string }>): ReactElement {
 	const isTabletAndUp = useMediaQuery('(min-width: 600px)')
+
+	const history = useHistory()
+	function onClick(): void {
+		history.goBack()
+	}
 
 	const { isLoading, isError, error, data } = useQuery('fruits', getFruits)
 	if (isLoading || isError) {
@@ -58,13 +63,18 @@ export default function DetailsPage({
 					<ImageAttribution author={fruit.image.author} />
 				</div>
 				<div className='my-8 sm:my-0 sm:ml-16'>
-					<Link data-cy='BackLink' to='/' className='flex items-center'>
+					<Link
+						onClick={onClick}
+						data-cy='BackLink'
+						to='/'
+						className='flex items-center'
+					>
 						<BackIcon />
 						<span className='ml-4 text-xl'>Back</span>
 					</Link>
 
 					<h1 data-cy='FruitName' className='mt-2 sm:mt-8 text-6xl font-bold'>
-						{fruit.name}
+						The {fruit.name}
 					</h1>
 					<h2 className='mt-3 text-xl text-gray-500 dark:text-gray-400'>
 						Vitamins per 100 g (3.5 oz)

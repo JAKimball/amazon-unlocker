@@ -28,5 +28,6 @@
 	"javascript.format.enable": false,
 	"stylelint.validate": ["css"],
 	"typescript.disableAutomaticTypeAcquisition": true,
-	"typescript.tsdk": "node_modules/typescript/lib"
+	"typescript.tsdk": "node_modules/typescript/lib",
+	"cSpell.words": ["bwip"]
 }
