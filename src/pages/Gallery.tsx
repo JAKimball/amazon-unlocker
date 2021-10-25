@@ -1,8 +1,8 @@
-import getFruits from 'api/getFruits'
-import Barcode from 'components/Barcode'
-import Fruit from 'components/Fruit'
-import Head from 'components/Head'
-import LoadingOrError from 'components/LoadingOrError'
+import getFruits from '../api/getFruits'
+import Barcode from '../components/Barcode'
+import Fruit from '../components/Fruit'
+import Head from '../components/Head'
+import LoadingOrError from '../components/LoadingOrError'
 import type { ReactElement } from 'react'
 import { useEffect, useState } from 'react'
 import { useQuery } from 'react-query'
@@ -12,7 +12,7 @@ const charSet = '0123456789'
 const randChar = (): string =>
 	charSet[Math.floor(Math.random() * charSet.length)]
 
-const randWord = (wordLength: number): string => {
+const randomWord = (wordLength: number): string => {
 	let result = ''
 	// eslint-disable-next-line no-plusplus
 	for (let index = 0; index < wordLength; result += randChar(), index++);
@@ -20,7 +20,7 @@ const randWord = (wordLength: number): string => {
 }
 
 const codeLength = 6
-const randomCode = (): string => `AZ${randWord(codeLength)}LK`
+const randomCode = (): string => `AZ${randomWord(codeLength)}LK`
 
 export default function GalleryPage(): ReactElement {
 	const [state, setState] = useState({ barcode: randomCode() })

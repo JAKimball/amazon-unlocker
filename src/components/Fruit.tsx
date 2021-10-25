@@ -1,7 +1,7 @@
 import type { KeyboardEvent, ReactElement } from 'react'
 import { useHistory } from 'react-router-dom'
 import type { IFruit } from 'types'
-import { useMediaQuery } from 'utils'
+import { useMediaQuery } from '../utils'
 import ImageAttribution from './ImageAttribution'
 
 const PREFERRED_IMAGE_WIDTH = 384

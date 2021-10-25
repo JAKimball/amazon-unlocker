@@ -1,13 +1,13 @@
-import getFruits from 'api/getFruits'
-import BackIcon from 'components/BackIcon'
-import Head from 'components/Head'
-import ImageAttribution from 'components/ImageAttribution'
-import LoadingOrError from 'components/LoadingOrError'
+import getFruits from '../api/getFruits'
+import BackIcon from '../components/BackIcon'
+import Head from '../components/Head'
+import ImageAttribution from '../components/ImageAttribution'
+import LoadingOrError from '../components/LoadingOrError'
 import type { ReactElement } from 'react'
 import { useQuery } from 'react-query'
 import type { RouteComponentProps } from 'react-router-dom'
 import { Link, Redirect, useHistory } from 'react-router-dom'
-import { useMediaQuery } from 'utils'
+import { useMediaQuery } from '../utils'
 
 const DESKTOP_IMAGE_WIDTH_PERCENTAGE = 0.4
 const MOBILE_IMAGE_HEIGHT_PERCENTAGE = 0.3

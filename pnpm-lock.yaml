@@ -4,7 +4,6 @@ specifiers:
   '@cypress/code-coverage': 3.9.11
   '@nabla/vite-plugin-eslint': 1.3.2
   '@tailwindcss/forms': 0.3.4
-  '@types/bwip-js': ^2.1.1
   '@types/react': 17.0.31
   '@types/react-dom': 17.0.10
   '@types/react-router-dom': 5.3.1
@@ -61,7 +60,6 @@ devDependencies:
   '@cypress/code-coverage': 3.9.11_cypress@8.6.0
   '@nabla/vite-plugin-eslint': 1.3.2_eslint@7.32.0+vite@2.6.10
   '@tailwindcss/forms': 0.3.4_tailwindcss@2.2.17
-  '@types/bwip-js': 2.1.1
   '@types/react': 17.0.31
   '@types/react-dom': 17.0.10
   '@types/react-router-dom': 5.3.1
@@ -2870,15 +2868,6 @@ packages:
     dependencies:
       mini-svg-data-uri: 1.4.3
       tailwindcss: 2.2.17_fa866e6aa6eb85ed70431566fb699b34
-    dev: true
-
-  /@types/bwip-js/2.1.1:
-    resolution:
-      {
-        integrity: sha512-Y9zuCLtplGGsFC/gFeAzAixW5I6B8/4u/ySlOljsbeznocmF/VlRtDR+5KgWcL4cLnajkIwBkioB7c0oOXL1Uw==
-      }
-    dependencies:
-      '@types/node': 16.11.2
     dev: true
 
   /@types/eslint/7.28.2:
