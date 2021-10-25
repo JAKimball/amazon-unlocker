@@ -4,6 +4,7 @@ specifiers:
   '@cypress/code-coverage': 3.9.11
   '@nabla/vite-plugin-eslint': 1.3.2
   '@tailwindcss/forms': 0.3.4
+  '@types/bwip-js': ^2.1.1
   '@types/react': 17.0.31
   '@types/react-dom': 17.0.10
   '@types/react-router-dom': 5.3.1
@@ -11,6 +12,7 @@ specifiers:
   '@typescript-eslint/parser': 5.1.0
   '@vitejs/plugin-react': 1.0.5
   autoprefixer: 10.3.7
+  bwip-js: ^3.0.4
   cypress: 8.6.0
   cz-conventional-changelog: 3.3.0
   eslint: 7.32.0
@@ -49,6 +51,7 @@ specifiers:
   workbox-window: 6.3.0
 
 dependencies:
+  bwip-js: 3.0.4
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
   react-query: 3.27.0_react-dom@17.0.2+react@17.0.2
@@ -58,6 +61,7 @@ devDependencies:
   '@cypress/code-coverage': 3.9.11_cypress@8.6.0
   '@nabla/vite-plugin-eslint': 1.3.2_eslint@7.32.0+vite@2.6.10
   '@tailwindcss/forms': 0.3.4_tailwindcss@2.2.17
+  '@types/bwip-js': 2.1.1
   '@types/react': 17.0.31
   '@types/react-dom': 17.0.10
   '@types/react-router-dom': 5.3.1
@@ -2868,6 +2872,15 @@ packages:
       tailwindcss: 2.2.17_fa866e6aa6eb85ed70431566fb699b34
     dev: true
 
+  /@types/bwip-js/2.1.1:
+    resolution:
+      {
+        integrity: sha512-Y9zuCLtplGGsFC/gFeAzAixW5I6B8/4u/ySlOljsbeznocmF/VlRtDR+5KgWcL4cLnajkIwBkioB7c0oOXL1Uw==
+      }
+    dependencies:
+      '@types/node': 16.11.2
+    dev: true
+
   /@types/eslint/7.28.2:
     resolution:
       {
@@ -3037,7 +3050,7 @@ packages:
       }
     requiresBuild: true
     dependencies:
-      '@types/node': 14.17.27
+      '@types/node': 16.11.2
     dev: true
     optional: true
 
@@ -4094,6 +4107,14 @@ packages:
   /builtin-status-codes/3.0.0:
     resolution: { integrity: sha1-hZgoeOIbmOHGZCXgPQF0eI9Wnug= }
     dev: true
+
+  /bwip-js/3.0.4:
+    resolution:
+      {
+        integrity: sha512-Gx1NYJsrAs99Ry5OQNPtbwwT7dw9kAhJDneiw1imfMmxEb9GHYl+7VeBxMZTFLgew8eLadfHPqUui5HhTYb6fw==
+      }
+    hasBin: true
+    dev: false
 
   /bytes/3.1.0:
     resolution:

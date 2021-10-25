@@ -1,6 +1,7 @@
 {
 	"compilerOptions": {
 		"allowSyntheticDefaultImports": true,
+		"allowJs": true,
 		"baseUrl": "src",
 		"forceConsistentCasingInFileNames": true,
 		"importHelpers": true,
@@ -8,7 +9,7 @@
 		"jsx": "react-jsx",
 		"lib": ["DOM", "DOM.Iterable", "ESNext"],
 		"module": "ESNext",
-		"moduleResolution": "Node",
+		"moduleResolution": "node",
 		"noEmit": true,
 		"removeComments": true,
 		"resolveJsonModule": true,

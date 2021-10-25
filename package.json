@@ -20,6 +20,7 @@
 		"validate": "npm lint && npm build --mode test && npm run test:headless"
 	},
 	"dependencies": {
+		"bwip-js": "^3.0.4",
 		"react": "17.0.2",
 		"react-dom": "17.0.2",
 		"react-query": "3.27.0",
@@ -29,6 +30,7 @@
 		"@cypress/code-coverage": "3.9.11",
 		"@nabla/vite-plugin-eslint": "1.3.2",
 		"@tailwindcss/forms": "0.3.4",
+		"@types/bwip-js": "^2.1.1",
 		"@types/react": "17.0.31",
 		"@types/react-dom": "17.0.10",
 		"@types/react-router-dom": "5.3.1",
